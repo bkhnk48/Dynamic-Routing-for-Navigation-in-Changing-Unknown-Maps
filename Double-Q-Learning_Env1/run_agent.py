@@ -63,7 +63,7 @@ def main():
     env.final()
 
     # Showing the Q-table with values for each action
-    RL.print_q_table()
+    #RL.print_q_table() #comment dòng này vì có thể gặp lỗi: hàm này in ra q_table_final nhưng có vẻ Double_QLearning không có thuộc tính này
 
     # Plotting the results
     RL.plot_results(steps, all_costs_1)
